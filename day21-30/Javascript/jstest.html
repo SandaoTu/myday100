@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+<h2 id="test" onclick="demoFun()">This is test</h2>
+<script>
+    var status = 0;
+
+    function demoFun(){
+        if(status%2== 0){
+           document.getElementById("test").innerHTML = "这是替换后的内容"+status;
+        }else{
+            document.getElementById("test").innerHTML = "This is test"+status;
+        }
+        status++;
+    }
+</script>
+</body>
+</html>
